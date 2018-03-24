@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>RoomEvent</name>
+    <events>
+        <variable constant="0" name="design" sid="159512914413132" static="0" type="number">0</variable>
+        <variable constant="0" name="Direction" sid="402053300075305" static="0" type="number">0</variable>
+        <event-block sid="558469836875348">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="123682454515668" type="System" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-3" name="Set position" sid="549035366243061" type="bear2dgamecharactesprites">
+                    <param id="0" name="X">200</param>
+                    <param id="1" name="Y">200</param>
+                </action>
+                <action id="-3" name="Set position" sid="379254870048524" type="Sprite3">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="597235787304784" type="Shadow">
+                    <param id="0" name="Pin to">bear2dgamecharactesprites</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="444912806178425">
+            <conditions>
+                <condition id="2" name="Key is down" sid="641768803943518" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="240707928775480" type="bear2dgamecharactesprites">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="550462803377545" type="Espace">
+                    <param id="0" name="X">Espace.X+1</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="103985038689745" type="bear2dgamecharactesprites">
+                    <param id="0" name="X">bear2dgamecharactesprites.X-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="571905950229068">
+            <conditions>
+                <condition id="2" name="Key is down" sid="709235724057609" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="412472223413998" type="bear2dgamecharactesprites">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="110010520201893" type="Espace">
+                    <param id="0" name="X">Espace.X-1</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="861317382150600" type="bear2dgamecharactesprites">
+                    <param id="0" name="X">bear2dgamecharactesprites.X+1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="630668935928619">
+            <conditions>
+                <condition id="2" name="Key is down" sid="634113055465502" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="630320798450792" type="System">
+                    <param id="0" name="Layout">Rooms</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287929503470206">
+            <conditions>
+                <condition id="2" name="Key is down" sid="718545178763632" type="Keyboard">
+                    <param id="0" name="Key">72</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="450703420736391" type="bear2dgamecharactesprites" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

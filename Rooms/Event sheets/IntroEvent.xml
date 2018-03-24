@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>IntroEvent</name>
+    <events>
+        <event-group description="" sid="659975305877221" title="On Game Start">
+            <sub-events>
+                <event-block sid="649679259280883">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="961898188653920" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="676827904442208" type="TextBubble">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="572945874043894" type="Intro1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="485212879230538" type="Intro2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="688355158791492" type="Intro3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="151021313679785" type="Room">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="296720010700462" title="Introduction">
+            <sub-events>
+                <event-block sid="378018615523504">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="702675225311888" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="418433814036607" type="TextBubble">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="210822851695477" type="Intro1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="612257369489962" type="Teddie">
+                            <param id="0" name="Animation">&quot;Talk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="849539455375883">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="237906489243315" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="973200591987124" type="Intro1" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="640041829650715" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="441744536647465" type="Intro1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="460646589570887" type="Intro2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="640793440584538" type="Teddie">
+                            <param id="0" name="Animation">&quot;Talk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="492303737587720">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="277120689331364" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="186945619106364" type="Intro2" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="183765491842086" type="Intro2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="199505154115176" type="TextBubble">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="842573766665510" type="Room">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="344828268114533" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="145520936417257" type="TextBubble">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="814826156280438" type="Intro3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="210706656299651" type="Teddie">
+                            <param id="0" name="Animation">&quot;TalkBlink&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="388775184354089">
+            <conditions>
+                <condition id="2" name="Key is down" sid="217198359759950" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="439686201004243" type="System">
+                    <param id="0" name="Layout">RoomLayout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
