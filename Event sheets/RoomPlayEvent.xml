@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>RoomPlayEvent</name>
+    <events>
+        <event-block sid="399766930020983">
+            <conditions>
+                <condition id="2" name="Key is down" sid="198569940331911" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="986009181760104" type="child">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="778702711064237" type="Espace">
+                    <param id="0" name="X">Espace.X+1</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="771505225163466" type="child">
+                    <param id="0" name="X">child.X-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="501631946086559">
+            <conditions>
+                <condition id="2" name="Key is down" sid="364381534592954" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="185214511406606" type="child">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="993266829031744" type="Espace">
+                    <param id="0" name="X">Espace.X-1</param>
+                </action>
+                <action disabled="1" id="-1" name="Set X" sid="343623219235517" type="child">
+                    <param id="0" name="X">child.X+1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

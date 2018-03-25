@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Room</name>
+    <events>
+        <variable constant="0" name="speakTeddy" sid="541413523126954" static="0" type="number">0</variable>
+        <variable constant="0" name="Direction" sid="845237215918435" static="0" type="number">0</variable>
+        <event-block sid="530116631916792">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="575680681406867" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="700038227477256" type="System">
+                    <param id="0" name="Width">854</param>
+                    <param id="1" name="Height">480</param>
+                </action>
+                <action id="-3" name="Set position" sid="853478509918635" type="Sprite3">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="304701974115623" type="Shadow">
+                    <param id="0" name="Pin to">child</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="877960603503495" type="coucou">
+                    <param id="0" name="Pin to">bulle2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="832753328168718" type="fadeIn" />
+                <action behavior="Pin" id="0" name="Pin to object" sid="628445488606666" type="teddyText1">
+                    <param id="0" name="Pin to">bulle3</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="363901597920743">
+            <conditions>
+                <condition id="2" name="Key is down" sid="823348082567714" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="371070943080552" type="child">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315587528180376">
+            <conditions>
+                <condition id="2" name="Key is down" sid="895305678578731" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="226204311316166" type="child">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="183327728661897">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="699056088837284" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ourson</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="869477720339786" type="bulle2">
+                    <param id="0" name="X">250</param>
+                    <param id="1" name="Y">150</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="641189597561886">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="524889403837886" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Library</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="927003579985428" type="fade">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="296523761001380" type="fade" />
+                <action id="-16" name="Wait" sid="985133712681412" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="877951394312909" type="System">
+                    <param id="0" name="Layout">&quot;Library&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="107291346897186">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="975052729314246" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ourson</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="144151744958046" type="System">
+                    <param id="0" name="Variable">speakTeddy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="606969047064166" type="bulle3">
+                    <param id="0" name="X">400</param>
+                    <param id="1" name="Y">150</param>
+                </action>
+                <action id="-16" name="Wait" sid="453427974262475" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="459621351124943" type="bulle3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="325722797968960" type="teddyText1">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="487690562025745" type="System">
+                    <param id="0" name="Variable">speakTeddy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="495172470134847" type="medal3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="929821189114820" type="Congratulation">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="344644432525757" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="875411719382164" type="medal3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="619078764970894" type="Congratulation">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="177940204925956">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="310517009947195" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ourson</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="815666276873590" type="System">
+                    <param id="0" name="Variable">speakTeddy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="775746412032047" type="bulle2">
+                    <param id="0" name="X">50</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+                <action id="-16" name="Wait" sid="669056948796403" type="System">
+                    <param id="0" name="Seconds">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="257567248519912" type="bulle2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="266979522558680" type="coucou">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="584306538153823" type="System">
+                    <param id="0" name="Variable">speakTeddy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="805513298006152">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="480553235229835" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ourson</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="559054027292062" type="System">
+                    <param id="0" name="Variable">speakTeddy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="785177101278685" type="bulle2">
+                    <param id="0" name="X">10</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="906161312533746">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="773531357407392" type="Mouse">
+                    <param id="0" name="Object">ourson</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="813033256643132" type="halo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="607115663059890">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="898286686436598" type="Mouse">
+                    <param id="0" name="Object">ourson</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="350845028886026" type="halo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514470420713421">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="545799965427108" type="Mouse">
+                    <param id="0" name="Object">Library</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="499140892835580" type="libraryLight">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="159503776994360">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="727955864479690" type="Mouse">
+                    <param id="0" name="Object">Library</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="739141752784182" type="libraryLight">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="791594926914643">
+            <conditions>
+                <condition id="2" name="Key is down" sid="241966750641408" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="142789594035406" type="System">
+                    <param id="0" name="Layout">Rooms</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

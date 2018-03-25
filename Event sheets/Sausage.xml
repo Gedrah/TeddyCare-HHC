@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sausage</name>
+    <events>
+        <event-block sid="566889873585650">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="730668027806741" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="747674005973423" type="FlippingPages" />
+                <action behavior="Fade" id="1" name="Start fade" sid="549174592193401" type="fadeIn" />
+            </actions>
+        </event-block>
+        <event-block sid="689195981140213">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="640371889706564" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">EspaceV</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="259273606457167" type="fadeIn">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="775861819418010" type="fadeIn" />
+                <action id="-16" name="Wait" sid="912949397410042" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="334174563267732" type="System">
+                    <param id="0" name="Layout">&quot;Library&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

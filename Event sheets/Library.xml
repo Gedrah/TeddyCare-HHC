@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Library</name>
+    <events>
+        <event-block sid="886112125065911">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="182492274875971" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">bookVoid</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="801474950733826" type="boxQuestion">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="683301242684869" type="confirm">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="647490761461674" type="ButtonNon">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="863644811287053" type="Text3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="878082003722262">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="700472311639313" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="878814348236055" type="fadeIn" />
+                <action behavior="Pin" id="0" name="Pin to object" sid="722162101596248" type="confirm">
+                    <param id="0" name="Pin to">boxQuestion</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="883450388721185" type="Text3">
+                    <param id="0" name="Pin to">boxQuestion</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="391104830583225" type="ButtonNon">
+                    <param id="0" name="Pin to">boxQuestion</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="858384824181294" type="boxQuestion">
+                    <param id="0" name="X">300</param>
+                    <param id="1" name="Y">300</param>
+                </action>
+                <action id="-15" name="Set visible" sid="627087429651184" type="boxQuestion">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="329553703431573" type="confirm">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="453802091947561" type="ButtonNon">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="457015841878898" type="Text3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="408405446322939">
+            <conditions>
+                <condition id="0" name="On clicked" sid="210845624480816" type="confirm" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="863947286093570" type="boxQuestion" />
+                <action id="-9" name="Destroy" sid="303013237495210" type="confirm" />
+                <action id="-9" name="Destroy" sid="805403057539536" type="ButtonNon" />
+                <action id="-9" name="Destroy" sid="805653741681931" type="Text3" />
+                <action id="-15" name="Set visible" sid="423666676903534" type="fade">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="871691077864202" type="fade" />
+                <action id="-16" name="Wait" sid="449489079909182" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="465445661850404" type="System">
+                    <param id="0" name="Layout">&quot;CancerBook&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="370125950766511">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="694120824827929" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BoxABoudin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="655854434613455" type="System">
+                    <param id="0" name="Layout">&quot;Sausage&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="292926872518715">
+            <conditions>
+                <condition id="0" name="On clicked" sid="456691179336443" type="ButtonNon" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="153718069014417" type="boxQuestion">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="484206738646754" type="confirm">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="2" name="Set visible" sid="654516314622570" type="ButtonNon">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="848057229965902" type="Text3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="703891740135397">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="992043333127881" type="Mouse">
+                    <param id="0" name="Object">arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="856667015897121" type="arrowLight">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="353392208691231">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="425628880073616" type="Mouse">
+                    <param id="0" name="Object">arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="904404189931442" type="arrowLight">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="371727193079809">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="786957302213282" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="712463923636377" type="System">
+                    <param id="0" name="Layout">&quot;Room&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

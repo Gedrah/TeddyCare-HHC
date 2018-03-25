@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Intro</name>
+    <events>
+        <event-group description="" sid="659975305877221" title="On Game Start">
+            <sub-events>
+                <event-block sid="649679259280883">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="961898188653920" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="676827904442208" type="TextBubble">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="572945874043894" type="Intro1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="485212879230538" type="Intro2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="688355158791492" type="Intro3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="471186473312630" type="Intro4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="493766126859574" type="Intro5">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="450848828466283" type="Intro6">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="230545232132115" type="Intro7">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="296720010700462" title="Introduction">
+            <sub-events>
+                <event-block sid="378018615523504">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="702675225311888" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="418433814036607" type="TextBubble">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="210822851695477" type="Intro1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="612257369489962" type="Teddie">
+                            <param id="0" name="Animation">&quot;Talk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="849539455375883">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="237906489243315" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="973200591987124" type="Intro1" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="640041829650715" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="441744536647465" type="Intro1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="460646589570887" type="Intro2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="640793440584538" type="Teddie">
+                            <param id="0" name="Animation">&quot;Talk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="412002630992752">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="738205033977333" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="955906627045431" type="Intro2" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="312813880581278" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="745445320869138" type="Intro2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="708945230172988" type="Intro3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="369567093812145" type="Teddie">
+                            <param id="0" name="Animation">&quot;Talk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="528946185656457">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="977276197303073" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="740211521410515" type="Intro3" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="756626373819751" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="803817110282427" type="Intro3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="664137036354214" type="Intro4">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="106120232934586" type="Teddie">
+                            <param id="0" name="Animation">&quot;TalkBlink&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="407794858865343">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="432825873136963" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="481469130490732" type="Intro4" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="816308317939064" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="897314986770172" type="Intro4">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="459017612301647" type="Intro5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="863825149905284" type="Teddie">
+                            <param id="0" name="Animation">&quot;Talk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="946643472949999">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="632281759182204" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="259881580611166" type="Intro5" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="417620040708753" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="312323449490876" type="Intro5">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="174377744789241" type="Intro6">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="206325834965423" type="Teddie">
+                            <param id="0" name="Animation">&quot;Talk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="498884632367576">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="146942837387780" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="590705732982049" type="Intro6" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="260108944002330" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="186758106225481" type="Intro6">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="863946116402159" type="Intro7">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="364859633060146" type="Teddie">
+                            <param id="0" name="Animation">&quot;TalkBlink&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="900543694888406">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="836856830718379" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="566993636444832" type="Intro7" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="674039388741585" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="609767849058935" type="System">
+                            <param id="0" name="Layout">&quot;Room&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

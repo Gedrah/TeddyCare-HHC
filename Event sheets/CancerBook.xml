@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>CancerBook</name>
+    <events>
+        <event-block sid="603004085904365">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="467374651822587" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="874156364942669" type="FlippingPages" />
+                <action behavior="Fade" id="1" name="Start fade" sid="595727310220966" type="fadeIn" />
+            </actions>
+        </event-block>
+        <event-block sid="710704438175172">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="932814024513449" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">EspaceV</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="638753130364625" type="fadeIn">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="134865017703236" type="fadeIn" />
+                <action id="-16" name="Wait" sid="663275287686482" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="285606650093940" type="System">
+                    <param id="0" name="Layout">&quot;Library&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884077161343499">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="383128986453110" type="Mouse">
+                    <param id="0" name="Object">arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="663067147503906" type="arrowLight">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="876175354697507">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="441538987197158" type="Mouse">
+                    <param id="0" name="Object">arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="268511109154996" type="arrowLight">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="709521174001860">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="877406650484142" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">arrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="193548512656247" type="System">
+                    <param id="0" name="Layout">&quot;Library&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
