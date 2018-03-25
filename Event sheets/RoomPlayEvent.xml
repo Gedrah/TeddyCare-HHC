@@ -11,7 +11,7 @@
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="986009181760104" type="child">
-                    <param id="0" name="State">0</param>
+                    <param id="0" name="State">1</param>
                 </action>
                 <action id="-1" name="Set X" sid="778702711064237" type="Espace">
                     <param id="0" name="X">Espace.X+1</param>
@@ -29,13 +29,52 @@
             </conditions>
             <actions>
                 <action id="7" name="Set mirrored" sid="185214511406606" type="child">
-                    <param id="0" name="State">1</param>
+                    <param id="0" name="State">0</param>
                 </action>
-                <action disabled="1" id="-1" name="Set X" sid="993266829031744" type="Espace">
-                    <param id="0" name="X">Espace.X-1</param>
+            </actions>
+        </event-block>
+        <event-block sid="286439456422489">
+            <conditions>
+                <condition id="2" name="Key is down" sid="612952347380737" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="703189756807315" type="Sprite14">
+                    <param id="0" name="Visibility">1</param>
                 </action>
-                <action disabled="1" id="-1" name="Set X" sid="343623219235517" type="child">
-                    <param id="0" name="X">child.X+1</param>
+                <action id="-15" name="Set visible" sid="871957253713959" type="dialog">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="628836756546947" type="FirstBoy">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="625354477716626" type="dialog">
+                    <param id="0" name="Text">&quot;Salut, comment ça va ?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="231106250648961" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="755732010216665" type="FirstBoy">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="381837062535317" type="secondBoy">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="340855277214714" type="dialog">
+                    <param id="0" name="Text">&quot;Hey, ça va et toi ?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="923195832783048" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="622462261297780" type="secondBoy">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="624991444297197" type="FirstBoy">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="128460778644891" type="dialog">
+                    <param id="0" name="Text">&quot;Super, mais je dois te laisser, je suis en plein pitch !&quot;</param>
                 </action>
             </actions>
         </event-block>

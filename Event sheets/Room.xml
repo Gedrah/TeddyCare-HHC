@@ -245,13 +245,78 @@
         <event-block sid="791594926914643">
             <conditions>
                 <condition id="2" name="Key is down" sid="241966750641408" type="Keyboard">
-                    <param id="0" name="Key">69</param>
+                    <param id="0" name="Key">32</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="142789594035406" type="System">
                     <param id="0" name="Layout">Rooms</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="658492072663186">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="915740089747464" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="255665959334674" type="mic">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277010209935103">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="709988540718364" type="Mouse">
+                    <param id="0" name="Object">mic</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="796174422531290" type="micLight">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="551618286906006" type="mic">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="779469694119370">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="487867014995533" type="Mouse">
+                    <param id="0" name="Object">mic</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="861296955184732" type="micLight">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="922130036591060" type="mic">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="126238693918700">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="320917621399916" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">micLight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="288458839429678" type="getInfo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="221828016244019" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="307009019209743" type="getInfo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="634857790149897" type="message">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="346901062267038" type="mic" />
+                <action id="-9" name="Destroy" sid="397184661688508" type="micLight" />
             </actions>
         </event-block>
     </events>

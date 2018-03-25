@@ -11,10 +11,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout active="1" order="1">Intro</layout>
+        <layout order="5">Rooms</layout>
+        <layout order="6">PlayRoom</layout>
+        <layout order="8">Room</layout>
         <event-sheet order="0">Library</event-sheet>
         <event-sheet order="2">Intro</event-sheet>
         <event-sheet order="3">RoomsEvent</event-sheet>
         <event-sheet order="4">Room</event-sheet>
+        <event-sheet order="7">RoomPlayEvent</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,8 +32,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/ChildRoom/" />
         <folder expanded="1" path="object-folder/Intro/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="layout-folder/ChildRoom/" />
-        <folder expanded="1" path="layout-folder/Intro/" />
+        <folder expanded="0" path="layout-folder/ChildRoom/" />
+        <folder expanded="0" path="layout-folder/Intro/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/ChildRoom/" />
         <folder expanded="1" path="event-folder/Intro/" />
@@ -77,5 +81,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite11/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/FirstBoy/" />
+        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/SansTitre/" />
+        <folder expanded="1" path="animation-folder/secondBoy/" />
+        <folder expanded="1" path="animation-folder/Sprite14/" />
+        <folder expanded="1" path="animation-folder/message/" />
+        <folder expanded="1" path="animation-folder/mic/" />
+        <folder expanded="1" path="animation-folder/getInfo/" />
+        <folder expanded="1" path="animation-folder/micLight/" />
     </folders-expanded>
 </c2uistate>
